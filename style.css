@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--default-background-color);
+  color: var(--default-color);
+
+}
+
+#content {
+  overflow: auto;
+  height: var(--content-height);
+  display: grid;
+  grid-template-columns: 25vw auto 25vw;
+}
+
+#positionImage {
+  max-width: unset !important;
+  /*found no other way to override this*/
+  max-height: unset !important;
+  width: 80%;
+  height: auto;
+  align-self: end;
+  margin-bottom: 5vh;
+  padding-left: 10%;
+  padding-right: 10%;
+
+
+}
+
+
+#dragContainer {
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-items: stretch;
+  justify-content: stretch;
+  flex-flow: column nowrap;
+}
+
+#dragContainer> :first-child {
+  margin-top: auto;
+  /* use !important to prevent breakage from child margin settings */
+}
+
+
+
+#partsDisplay .part {
+  margin: 0;
+  padding: 0;
+  border-radius: 20%;
+  background-color: grey;
+  width: 100%;
+  border: 0.1vw solid black;
+  size: contain;
+}
+
+#partsDisplay {
+  overflow: scroll;
+  max-height: 100%;
+}
+
+#dragContainer .part {
+
+  background-color: grey;
+
+  max-height: 50vh;
+  height: 100%;
+  max-width: 100%;
+}
+
+
+
+#iconContainer {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  float: right;
+}
+
+.controlIcon {
+  height: 10vh;
+}
+
+.description {
+  display: none;
+}
+
+#descriptionContainer {
+  background-color: var(--object-drawer-background-color);
+
+  display: grid;
+  grid-template-rows: 10vh 10vh 70vh;
+}
+
+#descriptionContainer-name,
+#descriptionContainer-description {
+  text-align: center;
+}
+
+.list-item {
+  transition-property: top, left, width, height;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+
