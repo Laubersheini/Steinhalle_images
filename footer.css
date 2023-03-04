@@ -1,0 +1,57 @@
+/*
+as this cssfile is included in all parts of the project some css variables are also stored here
+colors:
+
+Rot:
+#f6131a
+
+
+*/
+:root{
+  --content-height : 90vh;
+  --object-drawer-background-color: #191919 ;
+  --default-background-color: #2E2E2E;
+  --default-color: white;
+  --default-button-color:  #666d6f;
+}
+
+
+
+#footer{
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+
+  background-color:  #3c4244;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: center;
+
+
+  grid-template-columns: 5% 5% 20% 40% 24% 5%;
+  /*grid-template-columns: 5% 5% 20% 40% 17% 7% 5%;*/
+
+
+}
+
+#footerLogo{
+  justify-self: center;
+}
+
+.footerIcon{
+  justify-self: start;
+  align-self: stretch;
+}
+.footerIconHidden{
+  display: none;
+}
+
+.footerFlagIcon{
+  width:100%;
+  height: auto;
+  display: none;
+}

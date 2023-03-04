@@ -1,0 +1,39 @@
+:root{
+  --default-part-width : 12vw;
+}
+.selected-item {
+  
+  background-color: var(--default-button-color);
+  border-radius: 10%;
+  border: 2px solid black;
+  transform: scale(1.2);
+  box-shadow: 2px 5px 5px #000000;
+  
+}
+
+.selected-item-nozoom{
+  border: 2px solid black;
+  box-shadow: 2px 5px 5px #000000;
+  
+  background-color: var(--default-button-color);
+  border-radius: 10%;
+
+
+}
+.gott-list , .sachen-list , .list-item{
+  background-color: var(--default-button-color);
+  border-radius: 10%;
+
+}
+
+
+.sidebar img, .sidebar canvas, #dragContainer img {
+  
+  max-width: 19vw;
+  max-height: 30vh; /*for some things this should be 30vh maybe define this on a per item basis*/
+
+}
+#dragContainer canvas{
+
+  max-width: var(--default-part-width);
+}
