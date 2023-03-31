@@ -9,7 +9,7 @@ function parseParameters() {
         säulenaufbau[i].id = parseInt(split[i][0], 36);
         säulenaufbau[i].zones = []
         for (let j = 1; j < split[i].length; j++) {
-            säulenaufbau[i].zones[j - 1] = split[i][j]
+            säulenaufbau[i].zones[j - 1] = parseInt(split[i][j],36)
         }
     }
     return säulenaufbau;
